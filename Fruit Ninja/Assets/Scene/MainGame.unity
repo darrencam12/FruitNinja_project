@@ -208,6 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BladeTrailprefab: {fileID: 1901375134671842, guid: de0bbc2fe7dcdd74b9bce522cfd4c4c7,
     type: 2}
+  minCuttingVelocity: 0.001
 --- !u!4 &187833588
 Transform:
   m_ObjectHideFlags: 0

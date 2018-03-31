@@ -5,16 +5,20 @@ using UnityEngine;
 public class Blade : MonoBehaviour {
 
 		public GameObject BladeTrailprefab;
+		
+		public float minCuttingVelocity = .001f;
 
 		bool isCutting = false;
 
+		Vector2 previousPosition;
+
 		GameObject currentBladetrail;
+
 		Rigidbody2D rb;
 
 		Camera cam;
 
 		CircleCollider2D circleCollider;
-
 
 	void Start() {
 		//settig the camera to create the postion for the blade
@@ -29,7 +33,6 @@ public class Blade : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
 		// checking if the mouse click is pressed 0 = left mouse button
 		if(Input.GetMouseButtonDown(0))
 		{
@@ -46,13 +49,26 @@ public class Blade : MonoBehaviour {
 		{
 			UpdateCut();
 		}
-
 	}
 
 	void UpdateCut()
 	{
+		//getting a vector between the new position being the mouse and out previous position "when last clicked" with then we are getting the speed of the mouse that being Velocity 
+		Vector2 newPosition = cam.ScreenToWorldPoint(Input.mousePosition);
+
 		// setting the rigidbody to mouse position
-		rb.position = cam.ScreenToWorldPoint(Input.mousePosition);
+		rb.position = newPosition;
+
+		//fixes the velocity without the interfireance of the framerate
+		float velocity = (newPosition - previousPosition).magnitude * Time.deltaTime;
+
+		if(velocity > minCuttingVelocity)
+		{
+			circleCollider.enabled = true;
+		}else{
+			circleCollider.enabled = false;
+		}
+		previousPosition = newPosition;
 	}
 
 	void Startcutting()
@@ -62,7 +78,7 @@ public class Blade : MonoBehaviour {
 		
 		// parenting the prefab for the blade trail
 		currentBladetrail = Instantiate(BladeTrailprefab, transform);
-		circleCollider.enabled = true;
+		circleCollider.enabled = false;
 	}
 
 	void Stopcutting()
