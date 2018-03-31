@@ -64,6 +64,7 @@ public class Blade : MonoBehaviour {
 
 		if(velocity > minCuttingVelocity)
 		{
+			// enableding ciricle colider depnding on the value of velocity 
 			circleCollider.enabled = true;
 		}else{
 			circleCollider.enabled = false;
@@ -78,6 +79,8 @@ public class Blade : MonoBehaviour {
 		
 		// parenting the prefab for the blade trail
 		currentBladetrail = Instantiate(BladeTrailprefab, transform);
+		// this doesnt allow the circle collider to teleport and activate the circle collider
+		previousPosition = cam.ScreenToWorldPoint(Input.mousePosition);
 		circleCollider.enabled = false;
 	}
 

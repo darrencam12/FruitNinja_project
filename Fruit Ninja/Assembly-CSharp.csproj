@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Blade.cs" />
+     <Compile Include="Assets\Scripts\Fruit.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/darre/Documents/GitHub/FruitNinja_project/Fruit Ninja/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

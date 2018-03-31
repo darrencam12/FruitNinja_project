@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 915, y: 492}
   m_MaxSize: {x: 22010, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 127
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,14 +365,14 @@ MonoBehaviour:
     width: 553
     height: 926
   m_SceneLighting: 1
-  lastFramingTime: 1128.5856831711476
-  m_2DMode: 1
+  lastFramingTime: 1822.4795249078347
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.061028004, y: -0.051926754, z: -9.854492}
+    m_Target: {x: 0.017780721, y: 0.0032934546, z: 0.0030066967}
     speed: 2
-    m_Value: {x: -0.061028004, y: -0.051926754, z: -9.854492}
+    m_Value: {x: 0.017780721, y: 0.0032934546, z: 0.0030066967}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -397,17 +397,17 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0, y: 0, z: 0, w: -0.99999994}
   m_Size:
-    m_Target: 7.416098
+    m_Target: 2.2866805
     speed: 2
-    m_Value: 7.416098
+    m_Value: 2.2866805
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.19684619, y: 0.040280636, z: -0.008093864, w: -0.9795732}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -441,23 +441,23 @@ MonoBehaviour:
     height: 419
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e4270000
-    m_LastClickedID: 10212
-    m_ExpandedIDs: 9efbffff00000000
+    m_SelectedIDs: ee270000
+    m_LastClickedID: 10222
+    m_ExpandedIDs: 7a06fdffa21efdfff82dfdff8871fdffa814fefffa97ffff9efbffff00000000ee270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: watermelon_sliced
+      m_OriginalName: watermelon_sliced
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -188766
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -504,18 +504,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\darre\Documents\GitHub\FruitNinja_project\Fruit Ninja
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92270000
-    m_LastClickedID: 10130
+    m_SelectedIDs: a6270000
+    m_LastClickedID: 10150
     m_ExpandedIDs: 000000006827000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1548
+    x: 1540
     y: 92
-    width: 372
+    width: 380
     height: 926
