@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Blade : MonoBehaviour {
 
+		public GameObject BladeTrailprefab;
+
 		bool isCutting = false;
+
+		GameObject currentBladetrail;
 		Rigidbody2D rb;
 
 		Camera cam;
+
+		CircleCollider2D circleCollider;
 
 
 	void Start() {
@@ -15,6 +21,8 @@ public class Blade : MonoBehaviour {
 		cam = Camera.main;
 		// getting the rigidbody from the reference
 		rb = GetComponent<Rigidbody2D>();
+		//getting the circlecollider2d for the balde dittection of fruit
+		circleCollider = GetComponent<CircleCollider2D>();
 
 		
 	}
@@ -51,11 +59,21 @@ public class Blade : MonoBehaviour {
 	{
 		// setting the cut value to true
 		isCutting = true;
+		
+		// parenting the prefab for the blade trail
+		currentBladetrail = Instantiate(BladeTrailprefab, transform);
+		circleCollider.enabled = true;
 	}
 
 	void Stopcutting()
 	{
 		// setting the cut value to false
 		isCutting = false;
+
+		// de parrenting the prefab for the balde trail
+		currentBladetrail.transform.SetParent(null);
+		//destroying the blade trail after 1 second
+		Destroy(currentBladetrail,1f);
+		circleCollider.enabled = false;
 	}
 }

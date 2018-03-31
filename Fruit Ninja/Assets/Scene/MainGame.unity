@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 187833588}
   - component: {fileID: 187833587}
   - component: {fileID: 187833589}
+  - component: {fileID: 187833590}
   m_Layer: 0
   m_Name: Blade
   m_TagString: Untagged
@@ -205,6 +206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60e4a1485438a7479812c85d2a0de77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BladeTrailprefab: {fileID: 1901375134671842, guid: de0bbc2fe7dcdd74b9bce522cfd4c4c7,
+    type: 2}
 --- !u!4 &187833588
 Transform:
   m_ObjectHideFlags: 0
@@ -238,6 +241,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &187833590
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 187833586}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!1 &459306074
 GameObject:
   m_ObjectHideFlags: 0
