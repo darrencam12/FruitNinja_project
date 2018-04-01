@@ -6,7 +6,9 @@ public class FruitSpawner : MonoBehaviour {
 
 	// Use this for initialization
 
-	public GameObject fruitPrefab;
+	public GameObject[] fruitPrefab;
+
+	private int Number;
 	public Transform [] spawnPoints;
 
 	public float minDelay = .1f;
@@ -28,8 +30,12 @@ public class FruitSpawner : MonoBehaviour {
 			// giving a random range of time for fruit to spawn
 			int spawnIndex = Random.Range(0, spawnPoints.Length);
 			Transform spawnPoint = spawnPoints[spawnIndex];
+			
+			// randomizing a number between 0 - 3 so that the fruit can be randomly spawned
+			Number = Random.Range(0,3);
+
 			// spawning fruit
-			GameObject spawnedFruit = Instantiate(fruitPrefab, spawnPoint.position,spawnPoint.rotation);
+			GameObject spawnedFruit = Instantiate(fruitPrefab[Number], spawnPoint.position,spawnPoint.rotation);
 			
 			Destroy(spawnedFruit, 5f);
 
