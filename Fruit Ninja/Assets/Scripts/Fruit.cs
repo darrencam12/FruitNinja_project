@@ -10,7 +10,14 @@ public class Fruit : MonoBehaviour {
 	{
 		if(col.tag == "Blade")
 		{
-			Instantiate(fruitSlicedPrefab,transform.position,transform.rotation);
+
+			// this will get the direction of the z axis so when the fruit is sliced in a specific direction it will change to that direction.
+			Vector3 direction = (col.transform.position - transform.position).normalized;
+
+			// takes the direction to look at and outpouts to rotation
+			Quaternion rotation = Quaternion.LookRotation(direction);
+
+			Instantiate(fruitSlicedPrefab,transform.position, rotation);
 			Destroy(gameObject);
 		}
 	}
