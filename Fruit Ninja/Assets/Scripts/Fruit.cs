@@ -27,6 +27,8 @@ public class Fruit : MonoBehaviour {
 			// takes the direction to look at and outpouts to rotation
 			Quaternion rotation = Quaternion.LookRotation(direction);
 
+			ScoreScript.scoreValue += 1;
+
 			GameObject slicedFruit = Instantiate(fruitSlicedPrefab,transform.position, rotation);
 			Destroy(slicedFruit,3f);
 			Destroy(gameObject);
