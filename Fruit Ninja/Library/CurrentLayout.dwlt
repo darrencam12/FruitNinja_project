@@ -365,14 +365,14 @@ MonoBehaviour:
     width: 553
     height: 926
   m_SceneLighting: 1
-  lastFramingTime: 27.302568237318656
-  m_2DMode: 0
+  lastFramingTime: 637.8315026034546
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 0.6600251, y: -3.124765, z: 0.11978978}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0.6600251, y: -3.124765, z: 0.11978978}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -397,18 +397,18 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: -0.99999994}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.2863073
+    m_Target: 10.010787
     speed: 2
-    m_Value: 2.2863073
+    m_Value: 10.010787
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.19684619, y: 0.040280636, z: -0.008093864, w: -0.9795732}
-  m_LastSceneViewOrtho: 0
+  m_LastSceneViewRotation: {x: 0.1420154, y: -0.0059383325, z: 0.0008517865, w: 0.9898463}
+  m_LastSceneViewOrtho: 1
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
@@ -441,9 +441,9 @@ MonoBehaviour:
     height: 419
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9098ffff
-    m_LastClickedID: -26480
-    m_ExpandedIDs: 9498ffffe6d0ffff9efbffff00000000
+    m_SelectedIDs: e0b9ffff
+    m_LastClickedID: 0
+    m_ExpandedIDs: b4adfffffcf2ffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

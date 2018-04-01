@@ -6,8 +6,18 @@ public class Fruit : MonoBehaviour {
 
 
 		public GameObject fruitSlicedPrefab;
+		public float startForce = 15f;
+		
+		Rigidbody2D rb;
+
+		
+		void Start()
+		{
+			rb = GetComponent<Rigidbody2D>();
+			rb.AddForce(transform.up * startForce, ForceMode2D.Impulse);
+		}
 		void OnTriggerEnter2D(Collider2D col)
-	{
+		{
 		if(col.tag == "Blade")
 		{
 
@@ -17,8 +27,10 @@ public class Fruit : MonoBehaviour {
 			// takes the direction to look at and outpouts to rotation
 			Quaternion rotation = Quaternion.LookRotation(direction);
 
-			Instantiate(fruitSlicedPrefab,transform.position, rotation);
+			GameObject slicedFruit = Instantiate(fruitSlicedPrefab,transform.position, rotation);
+			Destroy(slicedFruit,3f);
 			Destroy(gameObject);
+			
 		}
 	}
 }
