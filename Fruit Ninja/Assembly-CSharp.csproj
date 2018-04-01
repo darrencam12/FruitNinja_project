@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Blade.cs" />
+     <Compile Include="Assets\Scripts\Bomb.cs" />
+     <Compile Include="Assets\Scripts\BombSpawner.cs" />
      <Compile Include="Assets\Scripts\Fruit.cs" />
      <Compile Include="Assets\Scripts\FruitSpawner.cs" />
      <Compile Include="Assets\Scripts\ScoreScript.cs" />

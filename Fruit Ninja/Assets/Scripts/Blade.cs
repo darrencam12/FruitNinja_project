@@ -95,4 +95,24 @@ public class Blade : MonoBehaviour {
 		Destroy(currentBladetrail,1f);
 		circleCollider.enabled = false;
 	}
+
+
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		// when the blade hits the collider for the fruit depending on what the Blade hits that corisponds with a differnt fruit tag the value for the score will increase
+
+		if(col.tag == "Watermelon")
+		{
+			ScoreScript.scoreValue += 1;
+		}
+		else if(col.tag == "Apple")
+		{
+			ScoreScript.scoreValue += 2;
+		}
+		else if(col.tag == "Strawberry")
+		{
+			ScoreScript.scoreValue += 5;
+		}
+		
+	}
 }
