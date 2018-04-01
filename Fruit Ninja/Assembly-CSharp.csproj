@@ -51,12 +51,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\Scripts\Blade.cs" />
      <Compile Include="Assets\Scripts\Bomb.cs" />
      <Compile Include="Assets\Scripts\BombSpawner.cs" />
      <Compile Include="Assets\Scripts\Fruit.cs" />
      <Compile Include="Assets\Scripts\FruitSpawner.cs" />
+     <Compile Include="Assets\Scripts\LifeScript.cs" />
      <Compile Include="Assets\Scripts\ScoreScript.cs" />
+     <None Include="Assets\Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/darre/Documents/GitHub/FruitNinja_project/Fruit Ninja/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

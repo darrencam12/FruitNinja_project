@@ -10,11 +10,13 @@ public class ScoreScript : MonoBehaviour {
 	Text score;
 	// Use this for initialization
 	void Start () {
+		// put the text in the score
 		score = GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		// put the score in the text and add the value of scoreValue
 		score.text = "" + scoreValue;
 	}
 }

@@ -6,6 +6,8 @@ public class Bomb : MonoBehaviour {
 
 	public float startforce = 15f;
 
+	public GameObject BombEffectPrefab;
+
 	Rigidbody2D rb;
 
 	void Start(){
@@ -19,9 +21,28 @@ public class Bomb : MonoBehaviour {
 		if(col.gameObject.tag == "Blade")
 		{
 			Destroy(gameObject);
+			LifeScript.LiveValue -= 1;
+		}
+
+		if(LifeScript.LiveValue == 0)
+		{
+			Time.timeScale = 0;
+		}
+
+		if(col.CompareTag("Blade"))
+		{
+			Explode();
 		}
 		
 	}
+
+	void Explode()
+	{
+
+		GameObject BombEffect = Instantiate(BombEffectPrefab, transform.position, transform.rotation);
+		Destroy(BombEffect,1f);
+	}
+	
 
 }
 
