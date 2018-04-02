@@ -38,7 +38,6 @@ public class Bomb : MonoBehaviour {
 
 	void Explode()
 	{
-
 		GameObject BombEffect = Instantiate(BombEffectPrefab, transform.position, transform.rotation);
 		Destroy(BombEffect,1f);
 	}
