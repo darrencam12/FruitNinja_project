@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\Bomb.cs" />
      <Compile Include="Assets\Scripts\BombSpawner.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\ChangeSceneEnd.cs" />
      <Compile Include="Assets\Scripts\Fruit.cs" />
      <Compile Include="Assets\Scripts\FruitSpawner.cs" />
      <Compile Include="Assets\Scripts\LifeScript.cs" />

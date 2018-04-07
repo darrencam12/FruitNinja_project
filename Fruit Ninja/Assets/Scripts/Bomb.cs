@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Bomb : MonoBehaviour {
@@ -22,11 +23,14 @@ public class Bomb : MonoBehaviour {
 		{
 			Destroy(gameObject);
 			LifeScript.LiveValue -= 1;
+			
 		}
 
 		if(LifeScript.LiveValue == 0)
 		{
-			Time.timeScale = 0;
+			SceneManager.LoadScene(2);
+			ScoreScript.scoreValue = 0;
+			LifeScript.LiveValue = 3;
 		}
 
 		if(col.CompareTag("Blade"))
@@ -35,7 +39,7 @@ public class Bomb : MonoBehaviour {
 		}
 		
 	}
-
+	
 	void Explode()
 	{
 		GameObject BombEffect = Instantiate(BombEffectPrefab, transform.position, transform.rotation);

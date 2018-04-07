@@ -9,9 +9,9 @@ public class ChangeScene : MonoBehaviour {
 	// Use this for initialization
 	
 
-	public void changeToSceen(int changeTheScene) {
+	public void GotoGame(int GotoGame) {
 
-		 SceneManager.LoadScene(changeTheScene);
+		 SceneManager.LoadScene(GotoGame);
 	}
 	
 }
